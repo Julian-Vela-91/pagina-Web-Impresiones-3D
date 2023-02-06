@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css"><!--Se utiliza para que el estilo no sea influenciado por el estilo que el navegador usa por defecto-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png" alt="Logo de la barberia Alura"></h1><!--alt se utiliza en caso que no cargue la imagen describir de que se trata-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li><!--Se utiliza para colocar un hipervinculo-->
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form><!--Se utiliza especificamente para la generación de formularios-->
+                <label for="nombreapellido">Nombre y Apellido</label><!--Se utiliza para colocar una etiqueta de contenido--><!--el for se utiliza para indicar que hace referencia al id nombreapellido-->
+                <input type="text" id="nombreapellido" class="input-padron" required> <!--input crea una caja de texto-->
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX) XXXXXXX">      
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required  required placeholder="¿Que solicitud requiere?"></textarea><!--Se utiliza para colocar un campo que se pueda cambiar de tamaño--> <!--cols= columnas, rows filas--><!--required se usa para que el campo solicitado sea obligatorio--><!--placeholder se utiliza como una guía para que el usuario sepa que diligenciar-->
+
+                <fieldset> <!--Se utiliza para un conjunto de datos-->
+                    <legend>¿Cómo le gustaria que lo contactemos?</legend><!--Etiqueda de contenidoo-->
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">  Telefono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label><!--checked se utiliza para que el campo esté seleecionado desde un inicio-->
+                      
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En cual horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select><!--Para crear listas desplegables-->
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de Impresiones J&E 3D?</label> <!--Genera una casilla en cuadrado para ser seleccionada por el usuario-->
+                
+                <input type="submit" value="Enviar Formulario" class="enviar"><!--habilita el boton de enviar-->
+
+            </form>
+
+            <table><!--Se utiliza para la generaión de las tablas-->
+                <thead>
+                    <tr><!--Las lineas o tablas-->
+                        <th>Día</th><!--Las celdas de la tabla-->
+                        <th>Horario</th>                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8:00 Am - 5:00 Pm</td>                    
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>8:00 Am - 5:00 Pm</td>                    
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>8:00 Am - 5:00 Pm</td>                    
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>8:00 Am - 5:00 Pm</td>                    
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8:00 Am - 5:00 Pm</td>                    
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer><!--Se utiliza para el pie de página-->
+            <img src="imagenes/logo-blanco.png" alt="Logo de la barberia Alura">
+            <p class="copyright">&copy Copyright Impresiones J&E 3D - 2023</p><!--En el siguiente llink se pueden encontrar los códigos de los simbolos: https://unicode-table.com/es/-->
+        </footer>
+    </body>
+</html>

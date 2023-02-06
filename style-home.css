@@ -1,0 +1,49 @@
+
+.titulo-principal{
+    padding-left: 30px;/*Crear un espacio a la izquierda*/
+}
+
+#banner{
+    width: 100%;/*cambia el tamaño del contenido*/
+}
+
+.principal{
+    background: #CCCCCC;/*cambia el color del fondo*/
+    padding: 20px; /*es el espacio entre el contenido del elemento y su borde*/
+}
+
+.titulo-centralizado{
+    text-align: center;/*centra el texto*/
+}
+
+p{
+    text-align: center;/*centra el texto*/
+}
+
+em strong{
+    color: #FF0000;/*cambia el color del texto*/
+}
+
+#mision{
+    font-size: 20px;/*Cambia el tamaño del texto*/
+}
+
+.diferenciales{
+    background: #FFFFFF;/*cambia el color del fondo*/
+    padding: 20px;/*es el espacio entre el contenido del elemento y su borde*/
+}
+
+.items{
+    font-style: italic;/*cambia el formato del texto*/
+}
+
+ul{
+    display: inline-block;/*ocupa solo el espacio del contenido*/
+    vertical-align: top; /*para solocar el texto en la parte de arriba*/
+    width: 20%; /*Cambia el tamaño del contenido*/
+    margin-right: 15%; /*margen derecho*/
+}
+
+.imagenDiferenciales{
+    width: 50%;/*cambia el tamaño del contenido*/
+}
